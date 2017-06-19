@@ -19,11 +19,7 @@ namespace Camera_App
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
-            int a = 1;
 
-            a += 1;
-            a -= 1;
-            a *= 1;
             // Set our view from the "main" layout resource
 
             SetContentView (Resource.Layout.Main);
