@@ -19,19 +19,22 @@ namespace Camera_App
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
-            int a = 1;
-
-            a += 1;
-            a -= 1;
-            a *= 1;
+           
             // Set our view from the "main" layout resource
 
             SetContentView (Resource.Layout.Main);
 
             var btnSnap = FindViewById<Button>(Resource.Id.btnSnap);
             imageView = FindViewById<ImageView>(Resource.Id.imgView);
+            var btnGallery = FindViewById<Button>(Resource.Id.btnGallery);
 
             btnSnap.Click += BtnSnap_Click;
+
+            btnGallery.Click += delegate
+            {
+                StartActivity(typeof(GalleryView));
+            };
+            
         }
 
         protected override void OnActivityResult(int requestCode, [GeneratedEnum] Result resultCode, Intent data)
@@ -39,6 +42,8 @@ namespace Camera_App
             base.OnActivityResult(requestCode, resultCode, data);
             Bitmap bitmap = (Bitmap)data.Extras.Get("data");
             imageView.SetImageBitmap(bitmap);
+
+            
         }
 
         private void BtnSnap_Click(object sender, EventArgs e)
