@@ -22,11 +22,11 @@ namespace Camera_App
             base.OnCreate(savedInstanceState);
 
             // Create your application here
-            SetContentView(Resource.Layout.Main);
+            SetContentView(Resource.Layout.GalleryLayout);
 
-            imageView = FindViewById<ImageView>(Resource.Id.imgView);
-            var btnGallery = FindViewById<Button>(Resource.Id.btnGallery);
-            var btnCam = FindViewById<Button>(Resource.Id.btnSnap);
+            imageView = FindViewById<ImageView>(Resource.Id.myImageView);
+            var btnGallery = FindViewById<Button>(Resource.Id.btnViewGallery);
+            var btnCam = FindViewById<Button>(Resource.Id.btnBack);
 
             btnCam.Click += delegate
             {
