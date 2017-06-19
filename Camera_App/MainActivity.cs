@@ -10,7 +10,7 @@ using System;
 
 namespace Camera_App
 {
-    [Activity(Label = "Camera_App", MainLauncher = true)]
+    [Activity(Label = "Camera", MainLauncher = true)]
     public class MainActivity : Activity
     {
 

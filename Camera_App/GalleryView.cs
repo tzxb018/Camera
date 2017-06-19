@@ -12,7 +12,7 @@ using Android.Widget;
 
 namespace Camera_App
 {
-    [Activity(Label = "GalleryView")]
+    [Activity(Label = "Gallery View")]
     public class GalleryView : Activity
     {
         ImageView imageView;
