@@ -21,6 +21,8 @@ namespace Camera_App
             base.OnCreate(bundle);
             int a = 1;
 
+            a += 1;
+            a -= 1;
             a *= 1;
             // Set our view from the "main" layout resource
 
