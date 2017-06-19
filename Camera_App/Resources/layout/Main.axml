@@ -29,7 +29,6 @@
             android:layout_height="match_parent"
             android:layout_gravity="right"
             android:layout_marginBottom="8dp"
-            android:layout_marginLeft="115.5dp"
             android:layout_marginRight="8dp" />
     </LinearLayout>
 </LinearLayout>
