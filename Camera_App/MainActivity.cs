@@ -22,6 +22,7 @@ namespace Camera_App
             int a = 1;
 
             a += 1;
+            a -= 1;
             // Set our view from the "main" layout resource
 
             SetContentView (Resource.Layout.Main);
